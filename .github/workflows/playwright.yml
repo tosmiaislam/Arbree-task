@@ -28,7 +28,7 @@ jobs:
         run: npx playwright install
 
       - name: Run Playwright Tests
-        run: npx playwright test arbree/swag.test.ts --headless
+        run: npx playwright test arbree/swag.test.ts
 
       - name: Run Playwright Tests with xvfb
         run: xvfb-run npx playwright test arbree/swag.test.ts --headed
