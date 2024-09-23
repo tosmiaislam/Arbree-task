@@ -93,7 +93,7 @@ export default defineConfig({
       name: 'chromium',
       use: { 
         browserName: 'chromium', 
-        headless: false, // Make sure headless is false for slowMo to take effect
+        headless: true, // Make sure headless is false for slowMo to take effect
         //video: 'on',
         screenshot: 'on',
         launchOptions: {
