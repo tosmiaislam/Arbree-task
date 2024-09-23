@@ -19,10 +19,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Change this to your required Node.js version
+          node-version: '20'  # Change this to your required Node.js version
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run Playwright tests
-        run: npx playwright test arbree/swag.test.ts
+      - name: Install Playwright Browsers
+        run: npx playwright install
+
+      - name: Run Playwright Tests
+        run: npx playwright test arbree/swag.test.ts --headless
+
+      - name: Run Playwright Tests with xvfb
+        run: xvfb-run npx playwright test arbree/swag.test.ts --headed
+
+      
+      

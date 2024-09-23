@@ -83,7 +83,11 @@
 
 
 import { defineConfig } from '@playwright/test';
-
+const config={
+  use: {
+    headless: true,
+  },
+};
 export default defineConfig({
   // Configure Playwright to use Chromium as the default browser
   projects: [
@@ -94,6 +98,10 @@ export default defineConfig({
   ],
   timeout: 60000, // Optional: Timeout for each test
   retries: 1, // Optional: Retry failed tests once
+
+
+
+  
 });
 
 
