@@ -1,5 +1,5 @@
 // tests/swag.test.ts
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import LoginPage from './pages/LoginPage';
 import ProductsPage from './pages/ProductsPage';
 import CheckoutPage from './pages/CheckoutPage';
