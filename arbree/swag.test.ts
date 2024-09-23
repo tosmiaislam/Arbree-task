@@ -1,11 +1,15 @@
 // tests/swag.test.ts
-import { test } from '@playwright/test';
+import { chromium, test } from '@playwright/test';
 import LoginPage from './pages/LoginPage';
 import ProductsPage from './pages/ProductsPage';
 import CheckoutPage from './pages/CheckoutPage';
 import ConfirmationPage from './pages/ConfirmationPage';
 
 test('complete checkout flow', async ({ page }) => {
+  // const browser = await chromium.launch({
+  //   headless : false,
+  //   slowMo: 10000,
+  // })
   const loginPage = new LoginPage(page);
   const productsPage = new ProductsPage(page);
   const checkoutPage = new CheckoutPage(page);
