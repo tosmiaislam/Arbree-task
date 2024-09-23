@@ -5,4 +5,7 @@ Overview:
 This repository contains automated tests for Arbree-task using Playwright. The tests are structured using the Page Object Model (POM) for better maintainability and readability.
 
 Clone the repository:
-   git clone git remote add origin https://github.com/tosmiaislam/Arbree-task.git
+   git clone https://github.com/tosmiaislam/Arbree-task.git
+   cd Arbree-task
+
+For run the test in the terminal type "npx playwright test arbree/swag.test.ts --headed" this command
