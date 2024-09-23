@@ -83,26 +83,25 @@
 
 
 import { defineConfig } from '@playwright/test';
+const config={
+  use: {
+    headless: true,
+  }
+}
 export default defineConfig({
   // Configure Playwright to use Chromium as the default browser
-  timeout: 60000, // Timeout for each test
-  retries: 1, // Retry failed tests once
   projects: [
     {
-      
       name: 'chromium',
-      use: { 
-        browserName: 'chromium', 
-        headless: true, // Make sure headless is false for slowMo to take effect
-        //video: 'on',
-        screenshot: 'on',
-        launchOptions: {
-        slowMo: 10000, // Slow down Playwright operations by 1 second per action
-      },
+      use: { browserName: 'chromium' },
     },
-  },
-
   ],
+  timeout: 60000, // Optional: Timeout for each test
+  retries: 1, // Optional: Retry failed tests once
+
+
+
+  
 });
 
 
