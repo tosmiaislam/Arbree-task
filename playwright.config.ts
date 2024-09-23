@@ -83,9 +83,6 @@
 
 
 import { defineConfig } from '@playwright/test';
-const config={
-
-};
 export default defineConfig({
   // Configure Playwright to use Chromium as the default browser
   projects: [
