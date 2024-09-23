@@ -1,4 +1,4 @@
-// src/pages/ConfirmationPage.ts
+//pages/ConfirmationPage.ts
 import { Page } from '@playwright/test';
 
 class ConfirmationPage {

@@ -1,4 +1,4 @@
-// src/pages/CheckoutPage.ts
+//pages/CheckoutPage.ts
 import { Page } from '@playwright/test';
 
 class CheckoutPage {
