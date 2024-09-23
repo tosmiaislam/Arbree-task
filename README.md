@@ -8,4 +8,9 @@ Clone the repository:
    git clone https://github.com/tosmiaislam/Arbree-task.git
    cd Arbree-task
 
+   after that have to install node and playwright 
+Command is :
+   npm install
+   npx playwright install
+
 For run the test in the terminal type "npx playwright test arbree/swag.test.ts --headed" this command
