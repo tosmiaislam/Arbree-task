@@ -16,7 +16,7 @@ test('complete checkout flow', async ({ page }) => {
   const confirmationPage = new ConfirmationPage(page);
 
   await loginPage.navigate();
-  await loginPage.login('standard_user', 'secret_sauce')
+  await loginPage.login('standard_user', 'secret_sauce');
   await productsPage.addToCart();
   await productsPage.goToCart();
   await checkoutPage.fillCheckoutInfo('Tosmia', 'Islam', '1111');
