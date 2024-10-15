@@ -1,4 +1,4 @@
-// tests/swag.test.ts
+// pages/swag.test.ts
 import { chromium, test } from '@playwright/test';
 import LoginPage from './pages/LoginPage';
 import ProductsPage from './pages/ProductsPage';
